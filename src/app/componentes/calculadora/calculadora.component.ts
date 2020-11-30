@@ -123,5 +123,9 @@ export class CalculadoraComponent implements OnInit {
     this.resultado=Math.sqrt(this.numero1);
     this.numeros=this.resultado;
   }
+  punto(){
+    this.concatenar=this.numeros;
+    this.numeros=this.concatenar+".";
+  }
 
 }

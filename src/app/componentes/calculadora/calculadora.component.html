@@ -5,8 +5,8 @@
 
       <section class="col-12 output_screen">
         <div class="text-right">
-          <input type="number" class="text-right" [(ngModel)]="numeros">
-          <input type="number" class=" output text-right" placeholder="{{resultado}}">
+          <input type="text" class="text-right" [(ngModel)]="numeros">
+          <input type="text" class=" output text-right" placeholder="{{resultado}}">
         </div>
       </section>
 
@@ -41,7 +41,7 @@
 
         <ul>
           <li (click)="cero()">0</li>
-          <li>.</li>
+          <li (click)="punto()">.</li>
           <li (click)="resultados()" class="active">=</li>
         </ul>
 
